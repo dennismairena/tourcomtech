@@ -34,10 +34,8 @@
            bordercolor="0xffffff"
            fillcolor="0xffffff"
            borderwidth="1"
-           borderalpha.desktop="0.0"
-           fillalpha.desktop="0.0"
-           borderalpha.tablet.or.mobile="1"
-           fillalpha.tablet.or.mobile="0.029999237048905166"
+           borderalpha="1"
+           fillalpha="0.029999237048905166"
            capture="false"
            onhover="onhoverPolygonDefaultPolygonSpotStyle"
            onover="onoverPolygonDefaultPolygonSpotStyle"
@@ -49,15 +47,11 @@
 
   <action name="onoverPolygonDefaultPolygonSpotStyle">
     set(borderwidth, 1);
-    set(borderalpha, 1);
-    set(fillalpha, 0.029999237048905166);
   </action>
 
   <action name="onoutPolygonDefaultPolygonSpotStyle">
 
     set(borderwidth, 1);
-    set(borderalpha, 0.0);
-    set(fillalpha, 0.0);
     hideTooltip();
   </action>
 
@@ -194,24 +188,13 @@
   <style name="Iconcatalogo"
          url="%FIRSTXML%/spots/cat_user_defaultpoint2.png"
          visible="false"
-         onhover="onhoverIconcatalogo"
-         onout="onoutIconcatalogo"
 
-         height="50"
-         width="50"
+         height="80"
+         width="80"
          />
 
-  <action name="onhoverIconcatalogo">
-    showtooltip('hotspot');
-  </action>
 
 
-  <action name="onoutIconcatalogo">
-    hideTooltip();
-
-
-
-  </action>
 
 
 
